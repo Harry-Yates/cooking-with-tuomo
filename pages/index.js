@@ -75,7 +75,7 @@ const BlogPostPreview = (props) => {
       <Image data={data.coverImage.responsiveImage} />
       <h2>
         <Link href={`/blog/${data.slug}`}>
-          <a>{data.title}</a>
+        {data.title}
         </Link>
       </h2>
       <div>{data.publishDate}</div>
