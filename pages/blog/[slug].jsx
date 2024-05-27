@@ -29,7 +29,7 @@ export default function BlogPost(props) {
         />
         <div style={{ marginTop: "50px" }}>
           <Link href="/">
-            <a>⬅️&nbsp;&nbsp;Back to the frontpage</a>
+            ⬅️&nbsp;&nbsp;Back to the frontpage
           </Link>
         </div>
       </div>
@@ -50,7 +50,7 @@ export const getStaticPaths = async (context) => {
     preview: context.preview,
   });
 
-  let paths = [];
+  const paths = [];
   slugQuery.allArticles.map((p) => paths.push(`/blog/${p.slug}`));
 
   return {
